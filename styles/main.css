@@ -7,8 +7,19 @@
 @import url("contact.css");
 @import url("footer.css");
 
+:root {
+  --brandColor: rgba(13, 255, 0, 0.664);
+  --brandSecond: blue;
+  --bgLight: white;
+  --bgDark: black;
+  --textLight: white;
+  --textDark: black;
+  --logoColor: hsl(60, 100%, 50%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: arial;
 }
