@@ -8,11 +8,12 @@
 @import url("footer.css");
 
 :root {
-  --brandColor: rgba(13, 255, 0, 0.664);
-  --brandSecond: blue;
+  --brandColor: #3ab0cd;
+  --brandColorLight: #9aebff;
+  --brandSecond: rgb(181, 255, 199);
   --bgLight: white;
   --bgDark: black;
-  --textLight: rgb(255, 208, 0);
+  --textLight: rgb(225, 241, 243);
   --textDark: black;
   --logoColor: hsl(60, 100%, 50%);
 }
