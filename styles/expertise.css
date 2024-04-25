@@ -1,7 +1,25 @@
 #expertise {
   width: 100%;
-  height: 80px;
-  background-color: rgb(46, 146, 9);
+  height: 500px;
+  background-color: white;
   text-align: center;
-  color: white;
+  color: black;
 }
+ .experties-grid-container{border: 2px solid green;
+     display: grid;
+     border: solid blue;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 3px;
+     width: 80%;
+     margin: 0 auto;
+}
+
+.experties-grid-item {
+   border: 2px solid green;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
