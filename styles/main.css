@@ -9,7 +9,8 @@
 
 :root {
   --brandColor: #3ab0cd;
-  --brandSecond: blue;
+  --brandColorLight: #9aebff;
+  --brandSecond: rgb(181, 255, 199);
   --bgLight: white;
   --bgDark: black;
   --textLight: rgb(225, 241, 243);
