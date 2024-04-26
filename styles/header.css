@@ -88,7 +88,7 @@
 }
 
 .button-container button:hover {
-  background-color: var(--brandColor);
+  background-color: var(--brandColorLight);
   color: var(--textDark);
 }
 
