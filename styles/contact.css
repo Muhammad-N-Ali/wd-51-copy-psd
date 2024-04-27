@@ -1,7 +1,54 @@
 #contact {
-  width: 100%;
-  height: 80px;
-  background-color: var(--brandColor);
-  text-align: center;
-  color: white;
+  width: 80%;
+  height: 400px;
+  color: black;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.container-contact{
+  align-items: flex-start;
+  width: 50%;
+  height: 50%;
+
+}
+
+.container-cleints{
+  align-items: flex-end;
+  width: 50%;
+  height: 50%;
+}
+
+.heading{
+  margin-top: 20px; 
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.cleints-logo{
+  margin: 15px auto;
+}
+
+.logo{
+  margin: 10px 20px;
+  width: 90px;
+  height:30px;
+  }
+
+.button{
+  width: 70px;
+  height:30px;
+  border-color: rgb(112, 195, 207);
+  color: rgb(112, 195, 207);
+}
+
+.input-field{
+  height: 32px;
+}
+
+.font-size{
+  font-size: 10px;
 }
