@@ -7,6 +7,10 @@
   object-fit: cover;
   width: 100%;
   color: var(--textLight);
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .nav-logo {
@@ -88,7 +92,7 @@
 }
 
 .button-container button:hover {
-  background-color: var(--brandColor);
+  background-color: var(--brandColorLight);
   color: var(--textDark);
 }
 
