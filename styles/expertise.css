@@ -1,11 +1,13 @@
-/* #expertise {
+#expertise {
   width: 100%;
   height: 500px;
   background-color: white;
   text-align: center;
+  justify-content: center;
   color: black;
 }
- .experties-grid-container{border: 2px solid green;
+ .experties-grid-container{
+    border: 2px solid green;
      display: grid;
      border: solid blue;
      grid-template-columns: repeat(3, 1fr);
@@ -14,17 +16,20 @@
      margin: 0 auto;
 }
 
-.experties-grid-item {
+.experties-grid-items{
    border: 2px solid green;
+   background-color: yellow;
+   
     border: solid;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 150px;
 }
- */
 
-#experties {
+
+/* #experties {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,5 +82,5 @@
         flex-basis: 48%; 
         margin-bottom: 20px;
     }
-}
+} */
 
