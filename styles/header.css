@@ -22,6 +22,11 @@
   margin: 0 auto;
   padding: 2rem 2rem;
 }
+.logo-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .logo-container {
   display: flex;
@@ -39,6 +44,30 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 1.4rem;
+  display: visible;
+}
+
+.header-right {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.humburger-menu {
+  display: none;
+  i {
+    font-size: 1.2rem;
+    border: 1px solid whitesmoke;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--brandColor);
+      border-color: var(--brandColorLight);
+    }
+  }
 }
 
 .nav li {
@@ -102,14 +131,27 @@
   .nav-logo {
     grid-template-columns: 1fr;
     justify-content: center;
+    padding: 1rem 1rem;
   }
-  .logo-container {
-    justify-content: center;
-    margin-bottom: 1rem;
+  .logo-container2 {
+    padding: 2rem;
   }
+
   .nav {
     justify-content: center;
     gap: 1rem;
+    display: visible;
+  }
+
+  .logo-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
   }
 
   .nav a {
@@ -123,14 +165,32 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
-    color: var(--brandSecond);
+  .nav-logo {
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0.5rem;
+  }
+  .logo-container {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
   }
 
-  .hero p {
-    line-height: 1.4rem;
-    font-size: 0.9rem;
+  .logo-container2 {
+    padding: 1rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-right {
+    justify-content: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    color: var(--brandColorLight);
+  }
+  .humburger-menu {
+    display: block;
   }
 }
