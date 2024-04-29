@@ -1,7 +1,78 @@
 #team {
   width: 100%;
-  height: 80px;
-  background-color: rgb(114, 150, 4);
+  background-image: url(/image/bgk-header.png);
+  background-color:hsl(240, 30%, 24%) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
   text-align: center;
   color: white;
+  ;
+}
+
+.team__header{
+  text-align: center;
+  letter-spacing: .2px;
+  padding: 2rem;
+}
+
+.team__header h2{
+  margin-bottom: 1rem;
+;
+}
+
+.team__header p{
+  font-weight: 200;
+  font-size: .8rem;
+}
+
+.team__grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  
+
+}
+
+.team__member{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  border: 2px solid white;
+  min-width: 15rem;
+  min-height: 4rem;
+  max-width: 15rem;
+  max-height: 4rem;
+  
+}
+
+.team__bottom-text{
+  margin-top: 2rem;
+}
+
+.team__button{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border: 2px solid;
+  border-color: var(--brandColor);
+  color: var(--brandColorLight);
+  background: transparent;
+  padding: 0.4rem 2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out; 
+  font-weight: 900;
+}
+
+.team__button:hover{
+  background-color: var(--brandColorLight);
+  color: var(--textDark);
+  font-weight: 500;
 }
