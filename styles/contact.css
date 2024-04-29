@@ -1,1 +1,91 @@
 
+#contact {
+  width: 80%;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 3rem;
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.container__contact {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.container__clients {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-top: 3rem;
+}
+
+.cleints-logo {
+  margin: 15px auto;
+  object-fit: cover;
+}
+
+.cleints__logo {
+  display: flex;
+  margin: 1rem auto;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100px;
+  margin: 0.8rem;
+  padding: 0.4rem 0.4rem;
+  object-fit: cover;
+}
+
+.button-font-size {
+  border: 2px solid;
+  border-color: var(--brandColor);
+  color: var(--textDark);
+  background: transparent;
+  margin-bottom: 4rem;
+  padding: 0.4rem 2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.button-font-size:hover {
+  background-color: var(--brandColorLight);
+  color: var(--textDark);
+}
+textarea {
+  height: 150px;
+  width: 300px;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+}
+
+textarea::placeholder {
+  padding-top: 8px;
+}
+
+input {
+  height: 35px;
+  width: 300px;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+}
+
+.font-size {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  #contact {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,1 +1,198 @@
 
+#header {
+  background-image: url(/image/bgk-header.png);
+  background-color: #36345f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  color: var(--textLight);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav-logo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+.logo-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-txt span {
+  color: var(--brandColor);
+  font-size: 2rem;
+  font-weight: 300;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.4rem;
+  display: visible;
+}
+
+.header-right {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.humburger-menu {
+  display: none;
+  i {
+    font-size: 1.2rem;
+    border: 1px solid whitesmoke;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--brandColor);
+      border-color: var(--brandColorLight);
+    }
+  }
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--textLight);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: var(--brandColor);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+.hero h1 {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  text-shadow: 1px 1px 4px black;
+}
+
+.hero p {
+  line-height: 1.6rem;
+}
+.button-container button {
+  border: 2px solid;
+  border-color: var(--brandColor);
+  color: var(--brandColorLight);
+  background: transparent;
+  margin-bottom: 4rem;
+  padding: 0.4rem 2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+  background-color: var(--brandColorLight);
+  color: var(--textDark);
+}
+
+/* Responsive area */
+
+@media only screen and (max-width: 1000px) {
+  .nav-logo {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+  .logo-container2 {
+    padding: 2rem;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 1rem;
+    display: visible;
+  }
+
+  .logo-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    color: var(--brandColorLight);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-logo {
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0.5rem;
+  }
+  .logo-container {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .logo-container2 {
+    padding: 1rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-right {
+    justify-content: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    color: var(--brandColorLight);
+  }
+  .humburger-menu {
+    display: block;
+  }
+}
+

@@ -1,1 +1,51 @@
 
+.experties-heading {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    text-transform: uppercase;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 4rem;
+}
+.expertise-item {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.expertise-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.expertise-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.expertise-item p {
+  font-size: 14px;
+  color: #666666;
+}
+@media (max-width: 768px) {
+  .expertise-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Adjust min and max width as needed */
+  }
+}
+
