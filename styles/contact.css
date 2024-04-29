@@ -30,12 +30,13 @@
 
 .cleints-logo{
   margin: 15px auto;
+  object-fit: cover;
 }
 
 .logo{
   margin: 10px 20px;
   width: 90px;
-  height:30px;
+  
   }
 
 .button{
