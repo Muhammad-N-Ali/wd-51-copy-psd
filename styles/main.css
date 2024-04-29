@@ -1,0 +1,26 @@
+@import url("header.css");
+@import url("hero.css");
+@import url("our-story.css");
+@import url("video.css");
+@import url("expertise.css");
+@import url("team.css");
+@import url("contact.css");
+@import url("footer.css");
+
+:root {
+  --brandColor: #3ab0cd;
+  --brandColorLight: #9aebff;
+  --brandSecond: rgb(181, 255, 199);
+  --bgLight: white;
+  --bgDark: black;
+  --textLight: rgb(225, 241, 243);
+  --textDark: black;
+  --logoColor: hsl(60, 100%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
