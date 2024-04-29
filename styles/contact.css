@@ -1,55 +1,87 @@
 #contact {
   width: 80%;
-  height: 400px;
   color: black;
-  box-sizing: border-box;
-  display:flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width:1200px;
+  padding-bottom: 3rem;
+  h3{
+    text-transform: uppercase;
+  }
+}
+
+.container__contact{
+  padding: 2rem;
   margin: 0 auto;
 }
 
-.container-contact{
-  align-items: flex-start;
-  width: 50%;
-  height: 50%;
 
-}
-
-.container-cleints{
-  align-items: flex-end;
-  width: 50%;
-  height: 50%;
+.container__clients{
+  padding: 2rem; 
+  margin:0 auto;
 }
 
 .heading{
-  margin-top: 20px; 
-  color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  margin-top: 3rem;
 }
 
-.cleints-logo{
-  margin: 15px auto;
+.cleints__logo{
+  display: flex;
+  margin: 1rem auto;
+  flex-direction: column;
+}
+
+
+img{
+  width: 100px;
+  margin: 0.3rem;
+  padding: .7rem .5rem;
   object-fit: cover;
 }
 
-.logo{
-  margin: 10px 20px;
-  width: 90px;
-  
-  }
-
-.button{
+button{
   width: 70px;
   height:30px;
-  border-color: rgb(112, 195, 207);
+  border: 1px solid rgb(112, 195, 207);
   color: rgb(112, 195, 207);
 }
+textarea{
+  height: 150px;
+  width: 300px;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+  
+}
 
-.input-field{
-  height: 32px;
+textarea::placeholder{
+  padding-top: 8px;
+}
+
+input{
+  height: 35px;
+  width: 300px;
+  border: 1px solid darkgray;
+  border-radius: 2px;
 }
 
 .font-size{
   font-size: 10px;
 }
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+  #contact {
+    
+    grid-template-columns: 1fr ;
+}
+
+}
+
+
+
+
