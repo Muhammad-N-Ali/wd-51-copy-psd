@@ -26,6 +26,18 @@
   margin-top: 3rem;
 }
 
+
+.cleints-logo{
+  margin: 15px auto;
+  object-fit: cover;
+}
+
+.logo{
+  margin: 10px 20px;
+  width: 90px;
+  
+  }
+
 .cleints__logo{
   display: flex;
   margin: 1rem auto;
